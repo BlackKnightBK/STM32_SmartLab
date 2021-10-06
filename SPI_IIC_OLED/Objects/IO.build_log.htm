@@ -1,0 +1,280 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Administrator,  , LIC=DSNII-T2MLR-RD3K3-AFS7N-51IV8-XIPF6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  F:\STM32-L\KEIL5\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      Segger\JL2CM3.dll V2.99.31.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+D:\大三下\物联网体系结构\Final作业\SPI_IIC_OLED\IO.uvprojx
+Project File Date:  06/10/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'F:\STM32-L\KEIL5\Core\ARM\ARMCC\Bin'
+Rebuild target 'IO'
+compiling main.c...
+.\USER\RTC\rtc.h(16): warning:  #1295-D: Deprecated declaration addMonth - give arg types
+  void addMonth();
+.\USER\RTC\rtc.h(17): warning:  #1295-D: Deprecated declaration addDay - give arg types
+  void addDay();
+.\USER\RTC\rtc.h(18): warning:  #1295-D: Deprecated declaration addHour - give arg types
+  void addHour();
+.\USER\RTC\rtc.h(19): warning:  #1295-D: Deprecated declaration addMin - give arg types
+  void addMin();
+.\USER\RTC\rtc.h(20): warning:  #1295-D: Deprecated declaration addSec - give arg types
+  void addSec();
+.\USER\RTC\rtc.h(22): warning:  #1295-D: Deprecated declaration decMonth - give arg types
+  void decMonth();
+.\USER\RTC\rtc.h(23): warning:  #1295-D: Deprecated declaration decDay - give arg types
+  void decDay();
+.\USER\RTC\rtc.h(24): warning:  #1295-D: Deprecated declaration decHour - give arg types
+  void decHour();
+.\USER\RTC\rtc.h(25): warning:  #1295-D: Deprecated declaration decMin - give arg types
+  void decMin();
+.\USER\RTC\rtc.h(26): warning:  #1295-D: Deprecated declaration decSec - give arg types
+  void decSec();
+.\USER\RTC\rtc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\main.c(46): warning:  #177-D: variable "setWeek"  was declared but never referenced
+  	u8 setWeek=0;//2021+505+（20/4）-2*20+26*（6+1）/10）+8-1
+USER\main.c(50): warning:  #177-D: variable "c"  was declared but never referenced
+  	u8 c=0;
+USER\main.c(51): warning:  #550-D: variable "RTC_Inited"  was set but never used
+  	u8 RTC_Inited=0;
+USER\main.c: 14 warnings, 0 errors
+compiling led.c...
+compiling delay.c...
+compiling key.c...
+.\USER\RTC\rtc.h(16): warning:  #1295-D: Deprecated declaration addMonth - give arg types
+  void addMonth();
+.\USER\RTC\rtc.h(17): warning:  #1295-D: Deprecated declaration addDay - give arg types
+  void addDay();
+.\USER\RTC\rtc.h(18): warning:  #1295-D: Deprecated declaration addHour - give arg types
+  void addHour();
+.\USER\RTC\rtc.h(19): warning:  #1295-D: Deprecated declaration addMin - give arg types
+  void addMin();
+.\USER\RTC\rtc.h(20): warning:  #1295-D: Deprecated declaration addSec - give arg types
+  void addSec();
+.\USER\RTC\rtc.h(22): warning:  #1295-D: Deprecated declaration decMonth - give arg types
+  void decMonth();
+.\USER\RTC\rtc.h(23): warning:  #1295-D: Deprecated declaration decDay - give arg types
+  void decDay();
+.\USER\RTC\rtc.h(24): warning:  #1295-D: Deprecated declaration decHour - give arg types
+  void decHour();
+.\USER\RTC\rtc.h(25): warning:  #1295-D: Deprecated declaration decMin - give arg types
+  void decMin();
+.\USER\RTC\rtc.h(26): warning:  #1295-D: Deprecated declaration decSec - give arg types
+  void decSec();
+.\USER\RTC\rtc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\KEY\key.c(266): warning:  #177-D: variable "DM0C"  was declared but never referenced
+  	int DM0C=0;
+USER\KEY\key.c(267): warning:  #177-D: variable "DM1C"  was declared but never referenced
+  	int DM1C=0;
+USER\KEY\key.c: 13 warnings, 0 errors
+compiling tim.c...
+.\USER\RTC\rtc.h(16): warning:  #1295-D: Deprecated declaration addMonth - give arg types
+  void addMonth();
+.\USER\RTC\rtc.h(17): warning:  #1295-D: Deprecated declaration addDay - give arg types
+  void addDay();
+.\USER\RTC\rtc.h(18): warning:  #1295-D: Deprecated declaration addHour - give arg types
+  void addHour();
+.\USER\RTC\rtc.h(19): warning:  #1295-D: Deprecated declaration addMin - give arg types
+  void addMin();
+.\USER\RTC\rtc.h(20): warning:  #1295-D: Deprecated declaration addSec - give arg types
+  void addSec();
+.\USER\RTC\rtc.h(22): warning:  #1295-D: Deprecated declaration decMonth - give arg types
+  void decMonth();
+.\USER\RTC\rtc.h(23): warning:  #1295-D: Deprecated declaration decDay - give arg types
+  void decDay();
+.\USER\RTC\rtc.h(24): warning:  #1295-D: Deprecated declaration decHour - give arg types
+  void decHour();
+.\USER\RTC\rtc.h(25): warning:  #1295-D: Deprecated declaration decMin - give arg types
+  void decMin();
+.\USER\RTC\rtc.h(26): warning:  #1295-D: Deprecated declaration decSec - give arg types
+  void decSec();
+.\USER\RTC\rtc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\TIM\tim.c(212): warning:  #223-D: function "printf" declared implicitly
+  		printf("AD:%d\r\n",Get_ADCVal(ADC3));
+USER\TIM\tim.c: 12 warnings, 0 errors
+compiling usart.c...
+compiling dht11.c...
+compiling hcsr04.c...
+compiling iic.c...
+compiling oled.c...
+.\USER\RTC\rtc.h(16): warning:  #1295-D: Deprecated declaration addMonth - give arg types
+  void addMonth();
+.\USER\RTC\rtc.h(17): warning:  #1295-D: Deprecated declaration addDay - give arg types
+  void addDay();
+.\USER\RTC\rtc.h(18): warning:  #1295-D: Deprecated declaration addHour - give arg types
+  void addHour();
+.\USER\RTC\rtc.h(19): warning:  #1295-D: Deprecated declaration addMin - give arg types
+  void addMin();
+.\USER\RTC\rtc.h(20): warning:  #1295-D: Deprecated declaration addSec - give arg types
+  void addSec();
+.\USER\RTC\rtc.h(22): warning:  #1295-D: Deprecated declaration decMonth - give arg types
+  void decMonth();
+.\USER\RTC\rtc.h(23): warning:  #1295-D: Deprecated declaration decDay - give arg types
+  void decDay();
+.\USER\RTC\rtc.h(24): warning:  #1295-D: Deprecated declaration decHour - give arg types
+  void decHour();
+.\USER\RTC\rtc.h(25): warning:  #1295-D: Deprecated declaration decMin - give arg types
+  void decMin();
+.\USER\RTC\rtc.h(26): warning:  #1295-D: Deprecated declaration decSec - give arg types
+  void decSec();
+.\USER\RTC\rtc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\OLED\oled.c(368): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(tempStrH,"%02d",readHour);
+USER\OLED\oled.c(475): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(tempStrH,"%02d",readHour);
+USER\OLED\oled.c(486): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(tempStrM,"%02d",readMin);
+USER\OLED\oled.c(497): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(tempStrS,"%02d",readSec);
+USER\OLED\oled.c: 15 warnings, 0 errors
+compiling adc.c...
+USER\ADC\adc.c(10): warning:  #550-D: variable "ADC_CommonInitStruct"  was set but never used
+  	ADC_CommonInitTypeDef ADC_CommonInitStruct;
+USER\ADC\adc.c: 1 warning, 0 errors
+compiling spi.c...
+compiling rtc.c...
+USER\RTC\rtc.h(16): warning:  #1295-D: Deprecated declaration addMonth - give arg types
+  void addMonth();
+USER\RTC\rtc.h(17): warning:  #1295-D: Deprecated declaration addDay - give arg types
+  void addDay();
+USER\RTC\rtc.h(18): warning:  #1295-D: Deprecated declaration addHour - give arg types
+  void addHour();
+USER\RTC\rtc.h(19): warning:  #1295-D: Deprecated declaration addMin - give arg types
+  void addMin();
+USER\RTC\rtc.h(20): warning:  #1295-D: Deprecated declaration addSec - give arg types
+  void addSec();
+USER\RTC\rtc.h(22): warning:  #1295-D: Deprecated declaration decMonth - give arg types
+  void decMonth();
+USER\RTC\rtc.h(23): warning:  #1295-D: Deprecated declaration decDay - give arg types
+  void decDay();
+USER\RTC\rtc.h(24): warning:  #1295-D: Deprecated declaration decHour - give arg types
+  void decHour();
+USER\RTC\rtc.h(25): warning:  #1295-D: Deprecated declaration decMin - give arg types
+  void decMin();
+USER\RTC\rtc.h(26): warning:  #1295-D: Deprecated declaration decSec - give arg types
+  void decSec();
+USER\RTC\rtc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+USER\RTC\rtc.c(43): warning:  #68-D: integer conversion resulted in a change of sign
+  			return -1;
+USER\RTC\rtc.c(61): warning:  #68-D: integer conversion resulted in a change of sign
+  			return -2;
+USER\RTC\rtc.c(244): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(tempHour<0)
+USER\RTC\rtc.c(263): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(tempMin<0)
+USER\RTC\rtc.c(282): warning:  #186-D: pointless comparison of unsigned integer with zero
+  	if(tempSec<0)
+USER\RTC\rtc.c(286): warning:  #1-D: last line of file ends without a newline
+  }
+USER\RTC\rtc.c: 17 warnings, 0 errors
+compiling stm32f4xx_adc.c...
+compiling misc.c...
+compiling stm32f4xx_exti.c...
+compiling stm32f4xx_gpio.c...
+compiling stm32f4xx_syscfg.c...
+compiling stm32f4xx_rcc.c...
+assembling startup_stm32f40_41xxx.s...
+compiling stm32f4xx_tim.c...
+compiling stm32f4xx_usart.c...
+compiling system_stm32f4xx.c...
+linking...
+Program Size: Code=12120 RO-data=2512 RW-data=2316 ZI-data=1124  
+FromELF: creating hex file...
+".\Objects\IO.axf" - 0 Error(s), 72 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.1.0.8.pack
+                Keil.STM32F4xx_DFP.1.0.8
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.3.1
+   * Component: EXTI Version: 1.3.0
+   * Component: Framework Version: 1.3.1
+   * Component: GPIO Version: 1.3.0
+   * Component: RCC Version: 1.3.0
+   * Component: SYSCFG Version: 1.3.0
+   * Component: TIM Version: 1.3.0
+   * Component: USART Version: 1.3.0
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\Device\STM32F407ZE
+  .\RTE\_IO
+  F:\STM32-L\KEIL5\Pack\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  F:\STM32-L\KEIL5\Pack\Keil\STM32F4xx_DFP\1.0.8\Device\Include
+  F:\STM32-L\KEIL5\Pack\Keil\STM32F4xx_DFP\1.0.8\Device\StdPeriph_Driver\inc
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: Keil::Device:Startup:1.3.1
+      Source file:   Device\Source\ARM\startup_stm32f40_41xxx.s
+      Include file:  Device\Include\stm32f4xx.h
+      Include file:  RTE_Driver\Config\RTE_Device.h
+      Source file:   Device\Source\ARM\STM32F4xx_OTP.s
+      Source file:   Device\Source\ARM\STM32F40xxx_41xxx_OPT.s
+      Source file:   Device\Source\system_stm32f4xx.c
+
+   * Component: Keil::Device:StdPeriph Drivers:EXTI:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_exti.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_exti.c
+
+   * Component: Keil::Device:StdPeriph Drivers:Framework:1.3.1
+      Source file:   Device\StdPeriph_Driver\src\misc.c
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_conf.h
+      Source file:   Device\StdPeriph_Driver\templates\stm32f4xx_it.c
+      Include file:  Device\StdPeriph_Driver\templates\stm32f4xx_it.h
+
+   * Component: Keil::Device:StdPeriph Drivers:GPIO:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_gpio.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_gpio.c
+
+   * Component: Keil::Device:StdPeriph Drivers:RCC:1.3.0
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_rcc.c
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_rcc.h
+
+   * Component: Keil::Device:StdPeriph Drivers:SYSCFG:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_syscfg.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_syscfg.c
+
+   * Component: Keil::Device:StdPeriph Drivers:TIM:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_tim.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_tim.c
+
+   * Component: Keil::Device:StdPeriph Drivers:USART:1.3.0
+      Include file:  Device\StdPeriph_Driver\inc\stm32f4xx_usart.h
+      Source file:   Device\StdPeriph_Driver\src\stm32f4xx_usart.c
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
