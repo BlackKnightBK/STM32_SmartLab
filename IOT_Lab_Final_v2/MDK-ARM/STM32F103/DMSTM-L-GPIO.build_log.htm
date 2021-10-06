@@ -1,0 +1,205 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Administrator,  , LIC=DSNII-T2MLR-RD3K3-AFS7N-51IV8-XIPF6
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.26.2.0
+Toolchain Path:  F:\STM32-L\KEIL5\Core\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+F:\STM32-L\资料\DMSTM-L示例源程序\DMSTM_L_StdPeriph_Lib_V3.5.0\Project\IOT_Lab_Final_v2\MDK-ARM\Project.uvprojx
+Project File Date:  05/17/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'F:\STM32-L\KEIL5\Core\ARM\ARMCC\Bin'
+Rebuild target 'GPIO'
+compiling stm32f10x_it.c...
+compiling USART2.c...
+..\USART2.c(75): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(msg,"%c",res);
+..\USART2.c: 1 warning, 0 errors
+compiling USART1.c...
+..\USART1.c(92): warning:  #223-D: function "memset" declared implicitly
+  			memset(USART1_BUF,0,500);//正常运行不会超出缓存，唯一的情况为ESP8266异常重启，故这里清空缓存
+..\USART1.c(77): warning:  #177-D: variable "msg"  was declared but never referenced
+  	char msg[50];
+..\USART1.c(78): warning:  #177-D: variable "i"  was declared but never referenced
+  	int i;
+..\USART1.c: 3 warnings, 0 errors
+compiling IIC_use_v1.c...
+..\IIC_use_v1.c(203): warning:  #188-D: enumerated type mixed with another type
+  				GY30_SendACK(1);                                //最后一个回应NOACK
+..\IIC_use_v1.c(207): warning:  #188-D: enumerated type mixed with another type
+          GY30_SendACK(0);
+..\IIC_use_v1.c(212): warning:  #1-D: last line of file ends without a newline
+  }
+..\IIC_use_v1.c: 3 warnings, 0 errors
+compiling main.c...
+..\user_Config.h(27): warning:  #1295-D: Deprecated declaration SDA_IN - give arg types
+  void SDA_IN();
+..\user_Config.h(28): warning:  #1295-D: Deprecated declaration SDA_OUT - give arg types
+  void SDA_OUT();
+..\DH11.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SR505.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\EXTI.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TIM.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\main.c(180): warning:  #223-D: function "strcpy" declared implicitly
+  			strcpy(DH11Data,"-1|-1");
+..\main.c(190): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(DH11Data, "%d|%d",DH11_T,DH11_H);
+..\main.c(201): warning:  #223-D: function "strcpy" declared implicitly
+  			strcpy(GY30Data,"-1");
+..\main.c(211): warning:  #223-D: function "sprintf" declared implicitly
+  			sprintf(GY30Data, "%.4f",LightData);//float转*char
+..\main.c(216): warning:  #223-D: function "sprintf" declared implicitly
+  		sprintf(SR505Data, "%d",GPIO_ReadInputDataBit(GPIOA,GPIO_Pin_0));
+..\main.c(122): warning:  #177-D: variable "LightMsg"  was declared but never referenced
+  	char LightMsg[20];
+..\main.c(127): warning:  #177-D: variable "DH11Msg"  was declared but never referenced
+  	char DH11Msg[50];
+..\main.c(128): warning:  #177-D: variable "ESPCheck"  was declared but never referenced
+  	int ESPCheck=0;
+..\main.c(132): warning:  #177-D: variable "testMsg"  was declared but never referenced
+  	char testMsg[100];
+..\main.c(29): warning:  #177-D: variable "counts"  was declared but never referenced
+  static unsigned int counts=0;
+..\main.c: 16 warnings, 0 errors
+compiling EXTI.c...
+..\EXTI.h(6): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\EXTI.c(100): warning:  #1-D: last line of file ends without a newline
+  }
+..\EXTI.c: 2 warnings, 0 errors
+compiling delay.c...
+compiling ESP8266.c...
+..\ESP8266.c(39): warning:  #223-D: function "strncpy" declared implicitly
+  				strncpy(ESPMsg,USART1_BUF+sta,end-sta+1);//处理字符串
+..\ESP8266.c(43): warning:  #223-D: function "strcmp" declared implicitly
+  				if(strcmp(ESPMsg,"OK")==0 ||strcmp(ESPMsg,"link is builded")==0 ||strcmp(ESPMsg,"ALREADY CONNECTED")==0)//对比分析
+..\ESP8266.c(47): warning:  #223-D: function "memset" declared implicitly
+  				memset(ESPMsg,0,50);//清空暂存区
+..\ESP8266.c(52): warning:  #223-D: function "memset" declared implicitly
+  	memset(USART1_BUF,0,500);//清空缓存
+..\ESP8266.c(78): warning:  #223-D: function "strncpy" declared implicitly
+  				strncpy(ESPMsg,USART1_BUF+sta,end-sta+1);
+..\ESP8266.c(82): warning:  #223-D: function "strstr" declared implicitly
+  				if(strstr(ESPMsg,"WIFI GOT IP"))
+..\ESP8266.c(86): warning:  #223-D: function "memset" declared implicitly
+  				memset(ESPMsg,0,50);
+..\ESP8266.c(91): warning:  #223-D: function "memset" declared implicitly
+  	memset(USART1_BUF,0,500);
+..\ESP8266.c(123): warning:  #223-D: function "strncpy" declared implicitly
+  				strncpy(ESPMsg,USART1_BUF+sta,end-sta+1);
+..\ESP8266.c(124): warning:  #223-D: function "strcmp" declared implicitly
+  				if(strcmp(ESPMsg,"No AP")==0)
+..\ESP8266.c(128): warning:  #223-D: function "memset" declared implicitly
+  				memset(ESPMsg,0,50);
+..\ESP8266.c(133): warning:  #223-D: function "memset" declared implicitly
+  	memset(USART1_BUF,0,500);
+..\ESP8266.c(148): warning:  #223-D: function "strcpy" declared implicitly
+  		strcpy(getCommand,USART1_BUF);  //复制缓存到暂存区
+..\ESP8266.c(149): warning:  #223-D: function "memset" declared implicitly
+  		memset(USART1_BUF,0,500);      //清空缓存
+..\ESP8266.c(162): warning:  #223-D: function "strcmp" declared implicitly
+  	if(strcmp(getCommand,"WIFI DISCONNECT\r\n")==0)//带有\r\n的信息是ESP8266发送的，当断开网络时，重置初始化状态
+..\ESP8266.c(159): warning:  #177-D: variable "testMsg"  was declared but never referenced
+  	char testMsg[50];
+..\ESP8266.c(284): warning:  #1-D: last line of file ends without a newline
+  }
+..\ESP8266.c: 17 warnings, 0 errors
+compiling DH11.c...
+..\DH11.h(20): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\DH11.c(136): warning:  #1-D: last line of file ends without a newline
+  }
+..\DH11.c: 2 warnings, 0 errors
+compiling TIM.c...
+..\TIM.h(11): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\TIM.c(85): warning:  #1-D: last line of file ends without a newline
+  }
+..\TIM.c: 2 warnings, 0 errors
+compiling SR505.c...
+..\SR505.h(7): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\SR505.c(12): warning:  #1-D: last line of file ends without a newline
+  }
+..\SR505.c: 2 warnings, 0 errors
+compiling Relay_Control.c...
+..\Relay_Control.c(12): warning:  #1-D: last line of file ends without a newline
+  }
+..\Relay_Control.c: 1 warning, 0 errors
+compiling misc.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_exti.c...
+compiling stm32f10x_spi.c...
+compiling stm32f10x_fsmc.c...
+compiling stm32f10x_sdio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_dma.c...
+compiling stm32f10x_i2c.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_adc.c...
+compiling stm32f10x_can.c...
+compiling stm32f10x_cec.c...
+compiling stm32f10x_crc.c...
+compiling stm32f10x_dac.c...
+compiling stm32f10x_dbgmcu.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_wwdg.c...
+assembling startup_stm32f10x_hd_vl.s...
+compiling stm32f10x_tim.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=11100 RO-data=340 RW-data=72 ZI-data=1624  
+FromELF: creating hex file...
+".\STM32F103\DMSTM-L-GPIO.axf" - 0 Error(s), 49 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.1.1.0.pack
+                Keil.STM32F1xx_DFP.1.1.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_GPIO
+  F:\STM32-L\KEIL5\Pack\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  F:\STM32-L\KEIL5\Pack\Keil\STM32F1xx_DFP\1.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
